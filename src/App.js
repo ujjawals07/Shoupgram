@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Header";
+import Home from "./Components/Home";
+import Trending from "./Components/Trending";
+import Trendings from "./Components/Trendings";
+import Posters from "./Components/Posters";
+import Features from "./Components/Features";
+import SignUp from "./Registration-form/SignUp";
+import css from "./style.css";
+import Cart from "./Links/Cart";
+import PosterOne from "./Links/PosterOne";
+import SeeAll from "./Links/SeeAll";
+import PosterTwo from "./Links/PosterTwo";
+import PosterThree from "./Links/PosterThree";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <BrowserRouter>
+        <div className="container">
+          <Home />
+          <Trending />
+          <Trendings />
+          <Posters />
+          <Features />
+          <Route path="/All" exact component={SeeAll} />
+        </div>
+      </BrowserRouter>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

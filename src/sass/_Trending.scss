@@ -1,0 +1,118 @@
+.trending {
+  grid-column: 2/8;
+  grid-row: 2/3;
+  background: rgb(255, 250, 250);
+  box-shadow: 0rem 5rem 2rem rgb(186, 186, 186);
+  //padding: 0rem 5rem;
+  &-product {
+    display: grid;
+    //-ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 3rem;
+    border: 1px solid rgb(251, 251, 251);
+    margin-top: 2rem;
+  }
+  &-items {
+    border: 2px solid rgb(223, 219, 219);
+    border-radius: 0.5rem;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: relative;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0rem 0.5rem 0.5rem rgb(227, 225, 225);
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s;
+      box-shadow: 0rem 0.5rem 0.5rem rgb(184, 182, 182);
+    }
+    //background-color: black;
+  }
+  &-product-image {
+    width: 100%;
+    height: 100%;
+  }
+  &-image {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  &-item-name {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  &-item-price {
+    color: rgb(66, 66, 66);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+  &-btn {
+    margin-top: 1rem;
+    background: #000;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  &-heading {
+    color: #000;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+.See-all_btn {
+  align-items: center;
+  margin-left: 2rem;
+  display: flex;
+  font-size: 1.5rem;
+  color: rgb(70, 188, 238);
+  font-weight: 500;
+  font-family: sans-serif;
+  width: 50%;
+  &:not(:last-child) {
+    margin-top: 2rem;
+  }
+}
+.heart {
+  font-size: 1.4rem;
+  color: rgb(196, 25, 25);
+  display: block;
+  float: left;
+}
+@media (max-width: 835px) {
+  .trending-image {
+    width: 100%;
+
+    margin: 0 auto;
+  }
+}
+@media (max-width: 765px) {
+  .trending-item-name {
+    font-size: 1.5rem;
+  }
+  .trending-item-price {
+    font-size: 1.2rem;
+  }
+
+  .trending-product {
+    padding: 0rem 1rem;
+  }
+}
+
+//Trendings (section two special products)
+.trendings {
+  grid-column: 2/8;
+  grid-row: 3/4;
+  background-color: white;
+  box-shadow: 0rem 5rem 2rem rgb(186, 186, 186);
+  //border-top: 2px solid black;
+}
