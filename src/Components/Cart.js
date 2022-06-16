@@ -209,4 +209,4 @@ const Cart = () => {
     </React.Fragment>
   );
 };
-export default Cart;
+export default Cart

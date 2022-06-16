@@ -1,5 +1,5 @@
 import React from "react";
-
+import sortmodal from "./Sortmodal";
 class Search extends React.Component {
   state = { term: "" };
 
@@ -11,6 +11,7 @@ class Search extends React.Component {
   };
   render() {
     return (
+      
       <React.Fragment>
         <div className="search-bar" onSubmit={this.submits}>
           <input
@@ -24,7 +25,9 @@ class Search extends React.Component {
             className="fas fa-search search-label"
           ></label>
         </div>
+       
       </React.Fragment>
+      
     );
   }
 }

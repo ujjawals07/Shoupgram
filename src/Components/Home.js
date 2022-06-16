@@ -7,7 +7,7 @@ const Home = () => {
       <section className="home" id="home">
         <div className="home-slider owl-carousel">
           <div className="item">
-            <img src="img/modal1.jpg" alt="" />
+            <img src="img/m1.jpg" alt="" />
             <div className="content">
               <h3>heavy discounts</h3>
               <p>

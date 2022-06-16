@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Search from "./Components/SearcBar";
 import SignUp from "./Registration-form/SignUp";
 const Header = () => {
@@ -9,7 +9,10 @@ const Header = () => {
     <React.Fragment>
       <header className="headers">
         <a href="#" className="fas fa-bars menubar" id="menu"></a>
-        <img src="img/logo.png" className="logo" />
+        <Link to="/">
+          <img src="img/logo.png" className="logo" />
+        </Link>
+
         <Search />
         <nav className="nav_list" id="navlistactive">
           <li className="nav-items">Home</li>
@@ -26,7 +29,11 @@ const Header = () => {
 
         <div className="icons">
           <a id="fav-icon" className="fas fa-heart i"></a>
-          <a id="cart-icon" className="fas fa-shopping-cart i"></a>
+          <Link
+            to="/cart"
+            id="cart-icon"
+            className="fas fa-shopping-cart i"
+          ></Link>
           <button
             className="fas fa-user i"
             onClick={() => showmodal(true)}

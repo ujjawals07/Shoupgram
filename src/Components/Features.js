@@ -1,5 +1,5 @@
 import React from "react";
-
+import sortmodal from "./Sortmodal";
 const Features = () => {
   return (
     <React.Fragment>

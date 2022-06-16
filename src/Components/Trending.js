@@ -1,15 +1,15 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Trending = () => {
   return (
     <React.Fragment>
       <section className="trending">
         <h3 className="trending-heading">Trending Products</h3>
 
-        <a href="#" className="See-all_btn">
+        <Link to="/all" className="See-all_btn">
           {" "}
           see all &#8594;
-        </a>
+        </Link>
         <div className="trending-product">
           <div className="trending-items">
             <div className="fas fa-heart heart"></div>

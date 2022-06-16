@@ -1,0 +1,75 @@
+.footers {
+  grid-row: 6/7;
+  grid-column: 2/8;
+}
+
+.box-container {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box-f {
+  flex: 1 1 20rem;
+}
+
+.h-f {
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-family: sans-serif;
+  color: rgb(27, 14, 74);
+  text-transform: capitalize;
+  display: block;
+}
+
+.item-f {
+  color: #666;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  padding-top: 1rem;
+  border-bottom: none;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: goldenrod;
+  }
+}
+
+.number {
+  text-align: center;
+  //font-family: sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-top: 1rem;
+  letter-spacing: 2px;
+}
+.phn-numb {
+  font-size: 2rem;
+  color: rgb(27, 14, 74);
+  padding: 0rem 0.4rem;
+  width: 100%;
+}
+.credit {
+  text-align: center;
+  width: 100%;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  color: #999;
+}
+@media (max-width: 628px) {
+  .phn-numb {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  .number {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+}
