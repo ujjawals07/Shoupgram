@@ -21,3 +21,6 @@ const Sections = () => {
 };
 
 export default Sections;
+/*
+  const [open, opnesort] = useState(false);
+   <Sortmodal sortmodal={open} onClose={() => opnesort(false)}></Sortmodal> */

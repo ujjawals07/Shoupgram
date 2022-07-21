@@ -1,7 +1,25 @@
 import React, { useState } from "react";
 import Sortmodal from "../Components/Sortmodal";
 import Filter from "../Components/Filter";
-const SeeAll = () => {
+import { fetchClothes } from "../Actions";
+import { connect } from "react-redux";
+
+class SeeAll extends React.Component {
+  componentDidMount() {
+    this.props.fetchClothes();
+  }
+  render() {
+    return <div>Post</div>;
+  }
+}
+
+const mapstatetoprops = (state) => {
+  console.log(state);
+  return { posts: state.Post };
+};
+export default connect(mapstatetoprops, { fetchClothes })(SeeAll);
+
+/*const SeeAll = () => {
   const [open, opnesort] = useState(false);
   const [show, showfilter] = useState(false);
 
@@ -262,5 +280,4 @@ const SeeAll = () => {
       <Filter filtermodal={show} close={() => showfilter(false)}></Filter>
     </React.Fragment>
   );
-};
-export default SeeAll;
+};*/

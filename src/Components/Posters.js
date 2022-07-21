@@ -13,10 +13,7 @@ const Posters = () => {
                 srcset=""
                 className="last_section-pic"
               />
-              <a href="#" className="link">
-                HOODIES <br />
-                <span className="small"> & LOWERS</span>
-              </a>
+          
             </div>
           </div>
           <div className="last_section_item">

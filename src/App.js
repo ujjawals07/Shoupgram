@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/Item" exact component={ItemDetails} />
           <Route path="/cart" exact component={Cart} />
           <Route path="/all" exact component={SeeAll} />
-          
         </React.Fragment>
       </BrowserRouter>
     </React.Fragment>
